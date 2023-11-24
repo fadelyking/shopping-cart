@@ -1,11 +1,17 @@
-@import-normalize;
 
 .nav-bar {
     display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    color: #FEFAE0;
+    padding: 20px;
+    font-weight: 800;
+    background-color: #5F6F52;
 }
 
 .nav-links > ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 90px;
 }
