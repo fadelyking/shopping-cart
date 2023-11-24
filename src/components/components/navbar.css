@@ -1,0 +1,11 @@
+@import-normalize;
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-links > ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
