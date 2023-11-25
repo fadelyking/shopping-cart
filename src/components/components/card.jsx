@@ -1,5 +1,6 @@
-export default function Card(id, name, image) {
-	console.log(name);
+import "./card.css";
+
+export default function Card({ id, name, image, description, price }) {
 	return (
 		<>
 			<div className="card">
@@ -7,7 +8,8 @@ export default function Card(id, name, image) {
 					<img src={image} />
 				</div>
 				<div className="card-bottom">
-					card name: {name}
+					<p>{name}</p>
+					<p>${price}</p>
 					<form action="#">
 						<label htmlFor="quantity">Quantity</label>
 						<select name="Quantity" id="quantity">
@@ -27,8 +29,3 @@ export default function Card(id, name, image) {
 		</>
 	);
 }
-/* Container
-Img
-Container
-Input Field
-Button */

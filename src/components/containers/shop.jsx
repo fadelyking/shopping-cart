@@ -17,20 +17,22 @@ export default function Shop() {
 	}, []);
 
 	if (images.length !== 1) {
-		console.log("test");
+		console.log(images);
 		return (
 			<>
 				<NavBar />
 				<div className="main">
 					<div className="cards-container">
 						{images.map((image) => {
-							<Card
-								id={image.id}
-								name={image.title}
-								image={image.image}
-								description={image.description}
-								price={image.price}
-							/>;
+							return (
+								<Card
+									name={image.title}
+									image={image.image}
+									description={image.description}
+									price={image.price}
+									key={image.id}
+								/>
+							);
 						})}
 					</div>
 				</div>
