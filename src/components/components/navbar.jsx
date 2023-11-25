@@ -10,7 +10,9 @@ export default function NavBar() {
 							<h1>Home</h1>
 						</Link>
 					</li>
-					<li>Shop</li>
+					<Link to="shop">
+						<li>Shop</li>
+					</Link>
 				</ul>
 			</div>
 			<div className="cart">Cart Icon</div>
