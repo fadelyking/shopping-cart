@@ -1,16 +1,26 @@
 import "./card.css";
 
-export default function Card({ id, name, image, description, price }) {
+export default function Card(props) {
+	const handleSubmit = (e) => {
+		e.preventDefault();
+	};
+
+	const handleClick = (e) => {
+		console.log(props.item);
+		e.preventDefault();
+		props.setItemsNum(props.itemsNum + 1);
+	};
+
 	return (
 		<>
 			<div className="card">
 				<div className="card-top">
-					<img src={image} />
+					<img src={props.image} />
 				</div>
 				<div className="card-bottom">
-					<p>{name}</p>
-					<p>${price}</p>
-					<form action="#">
+					<p>{props.name}</p>
+					<p>${props.price}</p>
+					<form onSubmit={handleSubmit}>
 						<label htmlFor="quantity">Quantity</label>
 						<select name="Quantity" id="quantity">
 							<option value="1">1</option>
@@ -22,7 +32,7 @@ export default function Card({ id, name, image, description, price }) {
 							<option value="9">9</option>
 							<option value="10">10</option>
 						</select>
-						<input type="submit" value="Submit" />
+						<button onClick={handleClick}>Add to Cart</button>
 					</form>
 				</div>
 			</div>
