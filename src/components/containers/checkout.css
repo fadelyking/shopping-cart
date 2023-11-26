@@ -1,0 +1,24 @@
+.main-checkout {
+    display: grid;
+    border: 5px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 90vh;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/6;
+    grid-row: 2/-1;
+    border: 2px solid red;
+    
+}
+
+.left-container {
+    display: flex;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    border: 2px solid blue;
+    
+}
