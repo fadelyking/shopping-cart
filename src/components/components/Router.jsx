@@ -26,7 +26,15 @@ export default function Router() {
 		},
 		{
 			path: "shop",
-			element: <Shop images={images} itemsNum={itemsNum} setItemsNum={setItemsNum} />,
+			element: (
+				<Shop
+					images={images}
+					itemsNum={itemsNum}
+					setItemsNum={setItemsNum}
+					cart={cart}
+					setCartItems={setCartItems}
+				/>
+			),
 		},
 	]);
 
