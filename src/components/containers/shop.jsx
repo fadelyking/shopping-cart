@@ -22,6 +22,8 @@ export default function Shop(props) {
 										key={image.id}
 										itemsNum={props.itemsNum}
 										setItemsNum={props.setItemsNum}
+										cart={props.cart}
+										setCartItems={props.setCartItems}
 									/>
 								);
 							})}

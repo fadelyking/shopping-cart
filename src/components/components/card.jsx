@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./card.css";
 
 export default function Card(props) {
@@ -5,10 +6,24 @@ export default function Card(props) {
 		e.preventDefault();
 	};
 
+	const [quantity, setQuantity] = useState(0);
+
 	const handleClick = (e) => {
-		console.log(props.item);
 		e.preventDefault();
 		props.setItemsNum(props.itemsNum + 1);
+
+		const newCart = props.cart.slice();
+		for (let i = -1; i < quantity; i++) {
+			console.log("pushed");
+			newCart.push(props.item);
+		}
+		props.setCartItems(newCart);
+		setQuantity(0);
+		console.log(props.cart);
+	};
+
+	const handleSelect = (e) => {
+		setQuantity(e.target.value);
 	};
 
 	return (
@@ -22,7 +37,12 @@ export default function Card(props) {
 					<p>${props.price}</p>
 					<form onSubmit={handleSubmit}>
 						<label htmlFor="quantity">Quantity</label>
-						<select name="Quantity" id="quantity">
+						<select
+							name="Quantity"
+							value={quantity}
+							onChange={handleSelect}
+							id="quantity"
+						>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">4</option>
