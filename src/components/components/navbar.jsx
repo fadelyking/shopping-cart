@@ -1,6 +1,7 @@
+import { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-export default function NavBar() {
+export default function NavBar(props) {
 	return (
 		<div className="nav-bar">
 			<div className="nav-links">
@@ -15,7 +16,7 @@ export default function NavBar() {
 					</Link>
 				</ul>
 			</div>
-			<div className="cart">Cart Icon</div>
+			<div className="cart">{props.itemsNumber} Cart Icon</div>
 		</div>
 	);
 }

@@ -1,9 +1,9 @@
 import "./home.css";
 import NavBar from "../components/navbar";
-export default function Homepage() {
+export default function Homepage(props) {
 	return (
 		<>
-			<NavBar />
+			<NavBar itemsNumber={props.itemsNum} />
 			<div className="container">
 				<div className="home-container">
 					<div className="image-text">
