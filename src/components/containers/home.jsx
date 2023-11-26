@@ -1,4 +1,5 @@
 import "./home.css";
+import PropTypes from "prop-types";
 import NavBar from "../components/navbar";
 export default function Homepage(props) {
 	return (
@@ -24,3 +25,7 @@ export default function Homepage(props) {
 		</>
 	);
 }
+
+Homepage.propTypes = {
+	itemsNum: PropTypes.number,
+};

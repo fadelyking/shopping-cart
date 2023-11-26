@@ -1,4 +1,4 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 export default function NavBar(props) {
@@ -20,3 +20,7 @@ export default function NavBar(props) {
 		</div>
 	);
 }
+
+NavBar.propTypes = {
+	itemsNumber: PropTypes.number,
+};

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import Card from "../components/card";
 import NavBar from "../components/navbar";
 import "./shop.css";
@@ -34,3 +34,11 @@ export default function Shop(props) {
 		);
 	}
 }
+
+Shop.propTypes = {
+	images: PropTypes.array,
+	itemsNum: PropTypes.number,
+	setItemsNum: PropTypes.func,
+	cart: PropTypes.array,
+	setCartItems: PropTypes.func,
+};

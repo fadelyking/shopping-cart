@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import "./card.css";
 
 export default function Card(props) {
@@ -14,12 +15,10 @@ export default function Card(props) {
 
 		const newCart = props.cart.slice();
 		for (let i = -1; i < quantity; i++) {
-			console.log("pushed");
 			newCart.push(props.item);
 		}
 		props.setCartItems(newCart);
 		setQuantity(0);
-		console.log(props.cart);
 	};
 
 	const handleSelect = (e) => {
@@ -59,3 +58,14 @@ export default function Card(props) {
 		</>
 	);
 }
+
+Card.propTypes = {
+	itemsNum: PropTypes.number,
+	cart: PropTypes.array,
+	setItemsNum: PropTypes.func,
+	item: PropTypes.object,
+	setCartItems: PropTypes.func,
+	name: PropTypes.string,
+	image: PropTypes.string,
+	price: PropTypes.number,
+};
