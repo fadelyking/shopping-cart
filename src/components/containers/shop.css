@@ -1,0 +1,17 @@
+.main-container {
+    height: 80vh;
+}
+
+.main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+    place-content: center;
+}
+.cards-container {
+    display: grid;
+    grid-row: 2/4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr 1fr;
+    gap: 30px;
+}
