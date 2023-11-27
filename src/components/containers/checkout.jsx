@@ -3,12 +3,12 @@ import NavBar from "../components/navbar";
 import "./checkout.css";
 
 export default function Checkout(props) {
+	const total = props.cart.reduce((accum, item) => accum + item.price, 0);
 	return (
 		<>
 			<NavBar />
 
 			<div className="main-checkout">
-				<div className="left-container"></div>
 				<div className="right-container">
 					{props.cart.map((item, index) => {
 						return (
@@ -22,6 +22,7 @@ export default function Checkout(props) {
 						);
 					})}
 				</div>
+				<div className="left-container">TOTAL: ${total}</div>
 			</div>
 		</>
 	);
