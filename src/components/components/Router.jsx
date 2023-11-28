@@ -31,7 +31,7 @@ export default function Router() {
 			element: <Homepage itemsNum={itemsNum} />,
 		},
 		{
-			path: "shop/:name",
+			path: "shop",
 			element: (
 				<Shop
 					images={images}
