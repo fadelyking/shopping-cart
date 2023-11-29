@@ -1,4 +1,5 @@
 import "./cart.css";
+import PropTypes from "prop-types";
 export default function Cart(props) {
 	return (
 		<>
@@ -13,3 +14,8 @@ export default function Cart(props) {
 		</>
 	);
 }
+
+Cart.propTypes = {
+	itemPrice: PropTypes.number,
+	itemName: PropTypes.string,
+};

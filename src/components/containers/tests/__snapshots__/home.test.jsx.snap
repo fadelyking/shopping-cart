@@ -1,0 +1,145 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home page container > Should render the homepage 1`] = `
+<div>
+  <div
+    class="nav-bar"
+  >
+    <div
+      class="nav-links"
+    >
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            <h1>
+              Home
+            </h1>
+          </a>
+        </li>
+        <a
+          href="/shop"
+        >
+          <li>
+            Shop
+          </li>
+        </a>
+      </ul>
+    </div>
+    <a
+      href="/checkout"
+    >
+      <div
+        class="cart"
+      >
+         Cart Icon
+      </div>
+    </a>
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="home-container"
+    >
+      <div
+        class="image-text"
+      >
+        <img
+          src="forest.jpg"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non ipsam consequatur temporibus hic qui laborum impedit cumque! Placeat, vel? Assumenda, similique non. Rerum explicabo qui voluptate laboriosam tempore eveniet!
+        </p>
+      </div>
+      <div
+        class="btns"
+      >
+        <button
+          class="primary"
+        >
+          Learn More !
+        </button>
+        <button
+          class="primary"
+        >
+          Visit Shop
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Homepage > Should render the homepage 1`] = `
+<div>
+  <div
+    class="nav-bar"
+  >
+    <div
+      class="nav-links"
+    >
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            <h1>
+              Home
+            </h1>
+          </a>
+        </li>
+        <a
+          href="/shop"
+        >
+          <li>
+            Shop
+          </li>
+        </a>
+      </ul>
+    </div>
+    <a
+      href="/checkout"
+    >
+      <div
+        class="cart"
+      >
+         Cart Icon
+      </div>
+    </a>
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="home-container"
+    >
+      <div
+        class="image-text"
+      >
+        <img
+          src="forest.jpg"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non ipsam consequatur temporibus hic qui laborum impedit cumque! Placeat, vel? Assumenda, similique non. Rerum explicabo qui voluptate laboriosam tempore eveniet!
+        </p>
+      </div>
+      <div
+        class="btns"
+      >
+        <button
+          class="primary"
+        >
+          Learn More !
+        </button>
+        <button
+          class="primary"
+        >
+          Visit Shop
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

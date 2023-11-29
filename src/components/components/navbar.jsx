@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 import "./navbar.css";
-import { Link, useParams } from "react-router-dom";
-import Checkout from "../containers/checkout";
-import Shop from "../containers/shop";
-import Homepage from "../containers/home";
+import { Link } from "react-router-dom";
+
 export default function NavBar(props) {
 	return (
 		<div className="nav-bar">

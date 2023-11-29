@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navigation > Should render the navigation bar 1`] = `
+<div>
+  <div
+    class="nav-bar"
+  >
+    <div
+      class="nav-links"
+    >
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            <h1>
+              Home
+            </h1>
+          </a>
+        </li>
+        <a
+          href="/shop"
+        >
+          <li>
+            Shop
+          </li>
+        </a>
+      </ul>
+    </div>
+    <a
+      href="/checkout"
+    >
+      <div
+        class="cart"
+      >
+         Cart Icon
+      </div>
+    </a>
+  </div>
+</div>
+`;
