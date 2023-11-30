@@ -51,7 +51,9 @@ export default function Card(props) {
 							<option value="9">9</option>
 							<option value="10">10</option>
 						</select>
-						<button onClick={handleClick}>Add to Cart</button>
+						<button type="button" onClick={handleClick}>
+							Add to Cart
+						</button>
 					</form>
 				</div>
 			</div>
