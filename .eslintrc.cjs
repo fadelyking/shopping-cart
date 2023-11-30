@@ -7,6 +7,7 @@ module.exports = {
 		"plugin:react/jsx-runtime",
 		"plugin:react-hooks/recommended",
 		"prettier",
+		["jest-dom"],
 	],
 	ignorePatterns: ["dist", ".eslintrc.cjs"],
 	parserOptions: { ecmaVersion: "latest", sourceType: "module" },
