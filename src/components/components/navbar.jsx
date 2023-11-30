@@ -19,7 +19,9 @@ export default function NavBar(props) {
 			</div>
 
 			<Link to="/checkout">
-				<div className="cart">{props.itemsNumber} Cart Icon</div>
+				<div className="cart">
+					<p>{props.itemsNumber} Cart Icon</p>
+				</div>
 			</Link>
 		</div>
 	);

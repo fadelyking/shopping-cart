@@ -36,7 +36,9 @@ exports[`Checkout > Should render the checkout page 1`] = `
         <div
           class="cart"
         >
-           Cart Icon
+          <p>
+             Cart Icon
+          </p>
         </div>
       </a>
     </div>

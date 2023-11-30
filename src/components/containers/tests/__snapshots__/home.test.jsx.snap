@@ -33,7 +33,9 @@ exports[`Homepage > Should render the homepage 1`] = `
       <div
         class="cart"
       >
-         Cart Icon
+        <p>
+           Cart Icon
+        </p>
       </div>
     </a>
   </div>

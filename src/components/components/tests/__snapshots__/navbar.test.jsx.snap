@@ -33,7 +33,9 @@ exports[`Navigation > Should render the navigation bar 1`] = `
       <div
         class="cart"
       >
-         Cart Icon
+        <p>
+           Cart Icon
+        </p>
       </div>
     </a>
   </div>
